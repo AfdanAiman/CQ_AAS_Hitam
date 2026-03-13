@@ -38,6 +38,7 @@ namespace PraktikumADO
         {
             try
             {
+                Koneksi();
                
             }
            
