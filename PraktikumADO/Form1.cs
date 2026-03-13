@@ -22,6 +22,10 @@ namespace PraktikumADO
             InitializeComponent();
         }
 
+        private void Koneksi()
+        {
+           
+        }
 
         private void button4_Click(object sender, EventArgs e)
         {
