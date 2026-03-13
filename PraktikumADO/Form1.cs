@@ -60,6 +60,9 @@ namespace PraktikumADO
 
                 string query = "SELECT COUNT(*) FROM Mahasiswa";
 
+                cmd = new SqlCommand(query, conn);
+
+               
             }
             
 
