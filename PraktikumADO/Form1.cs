@@ -39,9 +39,10 @@ namespace PraktikumADO
             try
             {
                 Koneksi();
-               
+                conn.Open();
+
             }
-           
+          
         }
 
         private void btnHitungMhs_Click(object sender, EventArgs e)
