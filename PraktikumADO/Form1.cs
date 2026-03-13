@@ -24,7 +24,9 @@ namespace PraktikumADO
 
         private void Koneksi()
         {
-           
+            conn = new SqlConnection(
+                "Data Sorce=DESKTOP-BQJ792T\AFDAN;Initial Catalog=DBAkademiADO;Integrated Security=True"
+                );
         }
 
         private void button4_Click(object sender, EventArgs e)
