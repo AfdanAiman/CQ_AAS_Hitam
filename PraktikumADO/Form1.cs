@@ -41,6 +41,8 @@ namespace PraktikumADO
                 Koneksi();
                 conn.Open();
 
+                MessageBox.Show("Koneksi ke database berhasil");
+               
             }
           
         }
