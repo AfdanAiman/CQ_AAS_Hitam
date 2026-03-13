@@ -25,7 +25,7 @@ namespace PraktikumADO
         private void Koneksi()
         {
             conn = new SqlConnection(
-                "Data Sorce=DESKTOP-BQJ792T\AFDAN;Initial Catalog=DBAkademiADO;Integrated Security=True"
+                "Data Source=DESKTOP-BQJ792T\\AFDAN;Initial Catalog=DBAkademikADO;Integrated Security=True"
                 );
         }
 
@@ -84,9 +84,19 @@ namespace PraktikumADO
 
                 string query = "SELECT COUNT(*) FROM MataKuliah";
 
-                
+                cmd = new SqlCommand(query, conn);
+
+                int jumlah = (int)cmd.ExecuteScalar();
+
+                txtHasil.Text = jumlah.ToString();
+
+                conn.Close();
             }
-            
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
         }
 
         private void txtHasil_TextChanged(object sender, EventArgs e)
