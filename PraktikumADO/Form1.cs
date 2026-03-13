@@ -42,7 +42,7 @@ namespace PraktikumADO
                 conn.Open();
 
                 MessageBox.Show("Koneksi ke database berhasil");
-               
+                conn.Close();
             }
           
         }
